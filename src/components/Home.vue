@@ -1,6 +1,6 @@
 <template>
 <div>
-<h1>VUE IS COOL</H1>
+
 </div>
 </template>
 
