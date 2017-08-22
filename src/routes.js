@@ -9,8 +9,8 @@ Vue.use(Router)
 var routes = new Router({
     routes:[
         { name:'Home', component:Home, path:'/'},
-        { name:'Blogs', component:Products, path:'/Blogs'},
-        { name:'Blog', component:Product, path:'/Blogs/:blogId'}
+        { name:'Blogs', component:Blogs, path:'/Blogs'},
+        { name:'Blog', component:Blog, path:'/Blogs/:blogId'}
     ]
 })
 
