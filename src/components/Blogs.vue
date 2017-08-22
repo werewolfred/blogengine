@@ -1,12 +1,13 @@
 <template>
   <div>
     <h1>Blogs VUE</h1>
-
+<div v-for="blog in blogs" class="card hoverable">
     <ul>
-      <li v-for="blog in blogs">
+      <li>
         <router-link :to="{name: 'Blog', params: { blogId:  blog.id } }">{{blog.name}}</router-link>
       </li>
     </ul>
+  </div>
 
   </div>
 </template>

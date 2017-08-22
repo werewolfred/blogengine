@@ -1,6 +1,6 @@
 <template>
         <div>
-          <h1>Blog {{ id }}</h1>
+          <h1>Blog {{ activeBlog.title }}</h1>
         </div>
       </template>
       
@@ -14,7 +14,12 @@
           mounted(){
             console.log('ABOUT IS READY')
             console.log("WHAT IS THIS?", this.$route.params.blogId)
-          }
+          },
+          computed:{
+                blog(){
+                    return this.$store.state.activeBlog
+                }
+            }
         }
       </script>
       

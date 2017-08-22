@@ -10,6 +10,16 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/blogs',
+      name: 'Blogs',
+      component: Blogs
+    },
+    {
+      path: '/blogs/:blogId',
+      name: 'Blog',
+      component: Home
     }
   ]
 })
